@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hub</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style>
+        * {
+            outline: none;
+            overflow: auto;
+        }
+
+        main {
+            padding: 10px 25px;
+        }
+
+        body {
+            font-family: 'system-ui', sans-serif;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .app {
+            box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #007CFF;
+            cursor: pointer;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            border: none;
+            font-family: 'system-ui', sans-serif;
+            font-size: 1em;
+            display: block;
+            user-select: none;
+        }
+
+        button:hover {
+            background: #0063CC;
+        }
+
+        button:active {
+            background: #003D7D;
+        }
+
+        button[disabled],
+        button[disabled]:hover,
+        button[disabled]:active {
+            background: #DDDDDD;
+            cursor: not-allowed;
+        }
+
+        .footer {
+            box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Hub</h1>
+        <h3>Install all things mrfakename.</h3>
+        <div class="app">
+            <h2>SleepyPig</h2>
+            <p>SleepyPig is a free-to-use macOS application for keeping your Mac awake.</p>
+            <button id="sleepypiginstall">Install</button>
+            <progress id="spigprog" style="display: none;" max="100"></progress>
+        </div>
+        <div class="app">
+            <h2>Splash Pro</h2>
+            <p>A powerful yet simple app to set your macOS wallpaper.</p>
+            <button id="splashinstall">Install</button>
+            <progress id="splashprog" style="display: none;" max="100"></progress>
+        </div>
+        <div class="app">
+            <h2>Openr</h2>
+            <p>The Openr Project is a must-have tool on your Mac. Developers can connect to Openr to launch apps on your Mac!</p>
+            <button id="openr">How to Install</button>
+        </div>
+        <div class="app">
+            <h2>FAST Browser</h2>
+            <p>A browser for the modern era. (Still in beta and not ready for production use!)</p>
+            <button id="fastinstall">Install</button>
+            <progress id="fastprog" style="display: none;" max="100"></progress>
+        </div>
+        <div class="app">
+            <h2>Wikimenu Lite 2.0</h2>
+            <p>Find Wikipedia articles from your menubar for free!</p>
+            <button id="wikiinstall">Install</button>
+            <progress id="wikiprog" style="display: none;" max="100"></progress>
+        </div>
+        <p class="footer">Hub v<span id="version">1.0.0</span>. &copy; 2022. Do not redistribute!</p>
+    </main>
+</body>
+
+</html>
